@@ -9,11 +9,13 @@
 
 echo $this->Form->create('Post');
 echo $this->Form->input('title',array(
+	'type'=>'text',
 	'class'=>'form-control',
 	'placeholder'=>'Título',
+	'required'=>'Necessário preencher este campo',
 	'label'=>array('text'=>'Título', 'class'=>'form-label')));
 echo '<br>';
-echo $this->Form->input('body',array('class'=>'form-control','rows'=>'3'));
+echo $this->Form->input('body',array('class'=>'form-control','rows'=>'3','required'=>'Necessário preencher este campo'));
 echo '<br>';
 
 echo 
